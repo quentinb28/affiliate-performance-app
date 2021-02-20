@@ -1,7 +1,6 @@
 FROM python:3.7
-LABEL maintainer "Quentin Bracq <bracq.quentin@gmail.com>"
+ADD . /app
 WORKDIR /app
-COPY ./ ./app
-RUN pip install -r app/requirements.txt
-EXPOSE 8050
+RUN pip3 install --no-cache-dir -r requirements.txt
+EXPOSE 8080
 CMD ["python", "app.py"]
