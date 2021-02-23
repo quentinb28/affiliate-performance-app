@@ -8,7 +8,7 @@
 ![Docker](https://img.shields.io/badge/docker_image-v1-blue.svg)
 
 ## Basic Overview
-<img src="https://github.com/quentinb28/affiliate-performance-app/blob/main/images/affiliate-performance-app.gif" width=40%>
+<img src="https://github.com/quentinb28/affiliate-performance-app/blob/main/images/affiliate-performance-app.gif" width=100%>
 
 ## Table of Contents
 
