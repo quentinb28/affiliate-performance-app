@@ -1,6 +1,11 @@
 # Affiliate Performance Application
-![Company](https://img.shields.io/badge/Employer-Investing.com-brightgreen)
-![Python](https://img.shields.io/badge/python-v3.7-blue.svg)
+![Employer](https://img.shields.io/badge/employer-Investing.com-brightgreen)
+![Python](https://img.shields.io/badge/python-v3.7-yellow.svg)
+![BigQuery](https://img.shields.io/badge/bigquery-v3.7-pink.svg)
+![Pandas](https://img.shields.io/badge/pandas-v1.2-orange.svg)
+![Plotly](https://img.shields.io/badge/plotly-v4.14-red.svg)
+![Dash](https://img.shields.io/badge/dash-v1.19-purple.svg)
+![Docker](https://img.shields.io/badge/docker_image-v1-blue.svg)
 
 ## Basic Overview
 <img src="https://github.com/quentinb28/affiliate-performance-app/blob/main/images/affiliate-performance-app.gif" width=40%>
@@ -8,10 +13,10 @@
 ## Table of Contents
 
 1. [Project Objectives](#Project-Objectives)
-2. [Resources / Tools](#Resources / Tools)
-3. [Data Collection](#my-second-title)
-4. [Statistical Test](#Statistical Test)
-5. [Dash Deployment](#my-second-title)
+2. [Resources / Tools](#Resources-/-Tools)
+3. [Data Collection](#Data-Collection)
+4. [Statistical Test](#Statistical-Test)
+5. [Dash Deployment](#Dash-Deployment)
 
 ## 1. Project Objectives
 
@@ -27,6 +32,7 @@
 * Pandas
 * Plotly
 * Dash
+* Docker
 
 ## 3. Data Collection
 
