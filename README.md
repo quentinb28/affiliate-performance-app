@@ -66,13 +66,13 @@ CMD ["python", "app.py"]
 ### Pull Docker Image (Not Public Yet)
 
 ```
-docker pull affiliate-performance-app:latest
+docker pull quentinb28/affiliate-performance-app:latest
 ```
 
 ### Run Docker Container
 
 ```
-docker run -name affiliate-performance-app -p 8080:8080 affiliate-performance-app:latest
+docker run -name affiliate-performance-app -p 8080:8080 quentinb28/affiliate-performance-app:latest
 ```
 
 ## Contributing
