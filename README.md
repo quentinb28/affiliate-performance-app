@@ -1,5 +1,41 @@
-# Build A/B Test - Affiliation Campaigns App
-> Data Scientist at Investing.com since March 2019
+# Affiliate Performance Application
+![Company](https://img.shields.io/badge/Employer-Investing.com-brightgreen)
+![Python](https://img.shields.io/badge/python-v3.7-blue.svg)
+
+## Basic Overview
+<img src="https://github.com/quentinb28/affiliate-performance-app/blob/main/images/affiliate-performance-app.gif" width=40%>
+
+## Table of Contents
+
+1. [Project Objectives](#Project-Objectives)
+2. [Resources / Tools](#Resources / Tools)
+3. [Data Collection](#my-second-title)
+4. [Statistical Test](#Statistical Test)
+5. [Dash Deployment](#my-second-title)
+
+## 1. Project Objectives
+
+* Collect affiliate data in a relevant time period.
+* Compare performances based on sound statistical tests.
+* Display results in an easy-to-read application.
+* Suggest rate adjustments to maximize revenues.
+
+## 2. Resources / Tools
+
+* Google BigQuery (SQL)
+* Python
+* Pandas
+* Plotly
+* Dash
+
+## 3. Data Collection
+
+* [SQL Query](https://github.com/quentinb28/affiliate-performance-app/blob/main/src/query_sql.py)
+* [Get Data](https://github.com/quentinb28/affiliate-performance-app/blob/main/src/get_data.py)
+
+## 4. Statistical Test
+
+## 5. Dash Deployment
 
 This directory was created to measure brokers' performances in all SiteGeo combinations.
 
