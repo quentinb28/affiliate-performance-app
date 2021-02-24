@@ -78,7 +78,7 @@ docker pull quentinb28/affiliate-performance-app:latest
 docker run -name affiliate-performance-app -p 8080:8080 quentinb28/affiliate-performance-app:latest
 ```
 
-## Contributing
+## 6. Contributing
 
 If you'd like to contribute, please fork the repository and use a feature
 branch. Pull requests are warmly welcome.
@@ -86,6 +86,6 @@ branch. Pull requests are warmly welcome.
 Please keep in mind that some of these projects might not be relevant anymore,
 as our processes constantly evolve.
 
-## Licensing
+## 7. Licensing
 
 Copyright © Investing.com . All rights reserved.
