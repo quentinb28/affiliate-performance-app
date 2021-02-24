@@ -1,9 +1,14 @@
-# Affiliate Performance Application
-![Python](https://img.shields.io/badge/python-v3.7-yellow.svg)
-![Pandas](https://img.shields.io/badge/pandas-v1.2-orange.svg)
-![Plotly](https://img.shields.io/badge/plotly-v4.14-red.svg)
-![Dash](https://img.shields.io/badge/dash-v1.19-purple.svg)
-![Docker](https://img.shields.io/badge/docker_image-v1-blue.svg)
+<h1 align="center">
+  Affiliate Performance Application
+</p>
+
+<p align="center">
+ <img src="https://img.shields.io/badge/python-v3.7-blue.svg" />
+ <img src="https://img.shields.io/badge/pandas-v1.2-red.svg" />
+ <img src="https://img.shields.io/badge/plotly-v4.14-yellow.svg" />
+ <img src="https://img.shields.io/badge/dash-v1.19-blueviolet.svg" />
+ <img src="https://img.shields.io/badge/docker_image-v1-informational.svg" />
+</p>
 
 ## Basic Overview
 <img src="https://github.com/quentinb28/affiliate-performance-app/blob/main/images/affiliate-performance-app.gif" width=100%>
