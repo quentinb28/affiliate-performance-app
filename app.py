@@ -81,7 +81,7 @@ def filter_delivery(df, tol_imps=100, tol_ctr=100):
 
         max_ctr = df.loc[df['DATE'] == __d, 'ctr'].max()
         min_ctr = df.loc[df['DATE'] == __d, 'ctr'].min()
-        diff_ctr_perc = (max_ctr - min_ctr) / max_ctr
+        diff_ctr_perc = (max_ctr - min_ctr) / (max_ctr+.01)
 
         if diff_imps_perc * 100 > tol_imps or diff_ctr_perc * 100 > tol_ctr:
             out_dates.append(__d)
