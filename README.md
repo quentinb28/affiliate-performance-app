@@ -1,7 +1,5 @@
 # Affiliate Performance Application
-![Employer](https://img.shields.io/badge/employer-Investing.com-brightgreen)
 ![Python](https://img.shields.io/badge/python-v3.7-yellow.svg)
-![BigQuery](https://img.shields.io/badge/bigquery-v3.7-pink.svg)
 ![Pandas](https://img.shields.io/badge/pandas-v1.2-orange.svg)
 ![Plotly](https://img.shields.io/badge/plotly-v4.14-red.svg)
 ![Dash](https://img.shields.io/badge/dash-v1.19-purple.svg)
