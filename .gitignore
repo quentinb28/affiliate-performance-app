@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 # Confidential
-data/data.csv
+data/
