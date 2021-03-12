@@ -15,43 +15,33 @@
 
 ## Table of Contents
 
-1. [Project Objectives](#Project-Objectives)
-2. [Resources / Tools](#Resources-/-Tools)
-3. [Data Collection](#Data-Collection)
-4. [Statistical Test](#Statistical-Test)
+1. [Situation](#Situation)
+2. [Techniques](#Techniques)
+3. [Action](#Action)
+4. [Results](#Results)
 5. [Dash Deployment](#Dash-Deployment)
 6. [Contributing](#Contributing)
 7. [Licensing](#Licensing)
 
-## 1. Project Objectives
+## 1. Situation
 
-* Collect affiliate data in a relevant time period.
-* Compare performances based on sound statistical tests.
-* Display results in an easy-to-read application.
-* Suggest rate adjustments to maximize revenues.
+Investing.com is a financial platform and news website; one of the top three global financial websites in the world. It offers market quotes,information about stocks, futures, options, analysis, commodities, and an economic calendar. Most of the revenue is generated through advertising; Premium and Remnant. The Remnant business models are CPL / CPA / Networks. The best bidder fills the ad request. The objective is to maximize the profitability so we need to make all the alternatives comparable. To do that we compute the eCPM (Rate * Events * 1000 / Impressions). The higher the better.
 
-## 2. Resources / Tools
+## 2. Techniques
 
-* Google BigQuery (SQL)
-* Python
-* Pandas
-* Plotly
-* Dash
-* Docker
+Rates are closed per country and there is some room for setups based on sites (languages). Consequently, the performances are measured based on SiteGeo between a Control and a Variant; the Control having the highest eCPM over a given period. The statistical technique that was employed here is a Chi-Square test of independence for conversions (Events / Impressions). The Chi-Square test of independence is used to determine if there is a significant relationship between two nominal (categorical) variables.  The frequency of each category for one nominal variable is compared across the categories of the second nominal variable. 
 
-## 3. Data Collection
+## 3. Action
 
-* Collect last-7-days data with converted rates: [SQL Query](https://github.com/quentinb28/affiliate-performance-app/blob/main/src/query_sql.py)
-* Load data from BigQuery to Dataframe: [Get Data](https://github.com/quentinb28/affiliate-performance-app/blob/main/src/get_data.py)
+A Dash App was built in Python that runs a Chi-Square test between the Control and the Variant for each SiteGeo combination. It then identifies if there's a significant relationship between the two with alpha = 0.5. From that point, ermerge four possible cases:
+* Control conversion > Variant conversion and Significant: Variant Rate should be Variant Rate * eCPM uplift.
+* Control conversion > Variant conversion and Not Significant: Variant Rate should be Control Rate.
+* Variant conversion > Control conversion and Significant: Variant Rate should be Variant Rate * eCPM uplift.
+* Variant conversion > Control conversion and Not Significant: Variant Rate should be Control Rate.
 
-## 4. Statistical Test
+## 4. Results
 
-* Filter unbalanced delivery (Daily Impressions / Click-Through Rates)
-* Pick control brand based on cumulated effective Cost Per Mile (eCPM).
-* Run ChiSquare Test for Independance on conversion rate between variant and control (Leads / Impressions).
-* Suggest relevant rate based on test results:
-  * Significant Difference: Variant Rate * eCPM uplift
-  * Not Significant Difference: Control Rate (if Control Rate > Variant Rate)
+The solution enables the team to prioritize and update the rates that represent the highest revenue uplifts on a daily basis.
 
 ## 5. App Deployment
 
