@@ -31,9 +31,9 @@ Investing.com is a financial platform and news website; one of the top three glo
 
 The project followed the following steps:
 
-* Create a BigQuery table condensing the cumulative traffic data for each Site Geo, Brand.
-* Perform in real-time statistical test to measure the performance of a Variant vs a Control.
-* Build an Dash app that displays the performance in real-time.
+* Create a BigQuery table condensing the cumulative traffic data for each Site Geo, Brand (1),
+* Perform in real-time statistical test to measure the performance of a Variant vs a Control (2),
+* Build an Dash app that displays the performance in real-time (3).
 
 ## 3. Action
 
