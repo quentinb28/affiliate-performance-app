@@ -19,7 +19,7 @@
 2. [Techniques](#Techniques)
 3. [Action](#Action)
 4. [Results](#Results)
-5. [Dash Deployment](#Dash-Deployment)
+5. [Running Docker Image](#Running-Docker-Image)
 6. [Contributing](#Contributing)
 7. [Licensing](#Licensing)
 
@@ -50,29 +50,14 @@ A Dash was built to display the performances in real-time and a Docker container
 
 The solution enables the team to prioritize and update the rates that represent the highest revenue uplifts on a daily basis.
 
-## 5. App Deployment
-
-### Dockerfile
-
-```
-FROM python:3.7
-ADD . /app
-WORKDIR /app
-RUN pip3 install --no-cache-dir -r requirements.txt
-EXPOSE 8080
-CMD ["python", "app.py"]
-```
-
-### Pull Docker Image (Not Public Yet)
+## 5. Running Docker Image :whale: (NOT PUBLIC YET)
 
 ```
 docker pull quentinb28/affiliate-performance-app:latest
-```
 
-### Run Docker Container
+docker run -p 8080:8080 quentinb28/affiliate-performance-app:latest
 
-```
-docker run -name affiliate-performance-app -p 8080:8080 quentinb28/affiliate-performance-app:latest
+copy / paste http://0.0.0.0:8080/ on your web browser
 ```
 
 ## 6. Contributing
